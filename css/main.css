@@ -131,13 +131,6 @@ header .container nav button {
 }
 
 
-.header__right>i {
-    font-size: 1.4rem;
-    padding: 0 4px;
-    color: var(--white);
-    transform: rotate(-20deg);
-}
-
 .fa-bars {
     font-size: 1.4rem;
     color: var(--white);
@@ -153,6 +146,26 @@ header .container nav button {
 
 .header__left {
 
+}
+
+.header__icon {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 38px;
+}
+
+.header__icon .fa-moon {
+    font-size: 1.4rem;
+    padding: 0 4px;
+    color: var(--white);
+    transform: rotate(-20deg);
+    transition: all 0.5s;
+}
+
+.header__icon .fa-moon:hover {
+    color: #fb811e;
+    cursor: pointer;
 }
 
 
@@ -353,6 +366,52 @@ header .container nav button {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .banner__left .title {
+        position: relative;
+    }
+
+    .banner__left .title {
+        width: 80vw;
+        border-radius: 4px;
+        margin: 0;
+    }
+
+    .banner__left .title {
+        background-color: var(--white);
+    }
+
+    .banner__left .title p {
+        font-size: 1.1rem;
+    }
+
+    .banner__left .title h1 {
+        font-size: 1.5rem;
+    }
+
+    .banner__left .title h1:first-child {
+        margin-top: 2rem;
+    }
+
+    .banner__left .title h2 {
+        top:0%;
+        left: 5%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .banner__left .title h2 {
+        top: 10%;
+        font-size: 5rem;
+    }
+    .banner__left .title p {
+        font-size: 0.85rem;
+        padding-right: 0px;
+    }
+    .banner__left .title h1 {
+        font-size: 1.3rem;
+    }
+}
 /* NATURAL  */
 .natural {
     height: 600px;
