@@ -163,7 +163,21 @@ header .container nav button {
     transition: all 0.5s;
 }
 
+.header__icon .fa-sun {
+    display: none;
+    font-size: 1.4rem;
+    padding: 0 4px;
+    color: var(--white);
+    transform: rotate(-20deg);
+    transition: all 0.5s;
+}
+
 .header__icon .fa-moon:hover {
+    color: #fb811e;
+    cursor: pointer;
+}
+
+.header__icon .fa-sun:hover {
     color: #fb811e;
     cursor: pointer;
 }
