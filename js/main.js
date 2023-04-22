@@ -138,7 +138,7 @@ document.getElementById('sun').onclick = function () {
         arrayCardBody[i].classList.add('white-theme');
         arrayCardTitle[i].classList.add('dark-color');
         arrayCardBody[i].classList.remove('dark-theme');
-        arrayCardTitle[i].classList.remove('dark-color');
+        arrayCardTitle[i].classList.remove('white-color');
     }
 
     /**
