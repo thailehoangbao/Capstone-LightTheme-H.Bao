@@ -14,7 +14,7 @@ body {
     --mainbackgroud-color: #009f4d;
     --text-color: #fb811e;
     --white: white;
-    --black: black;
+    --black: #222222;
     --gray: #fafafa;
 }
 
@@ -24,13 +24,43 @@ body {
     --gray: black;
 }
 
+.white-color {
+    color: var(--white)!important;
+}
+
+.dark-color {
+    color: var(--black)!important;
+}
+
+.dark-theme {
+    background-color: var(--background-darktheme)!important;
+}
+
+.white-theme {
+    background-color: var(--white)!important;
+}
+
+.farm-color-moon {
+    color: #c1c1c135!important;
+}
+
+.display-boxshadow {
+    box-shadow: inset;
+}
+
+.none-boxshadow {
+    box-shadow: none;
+}
+
+
 /* HEADER  */
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.07);
 }
 
 .navbar {
@@ -492,7 +522,7 @@ header .container nav button {
 }
 
 .natural__item:hover {
-    box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 0 20px 8px rgba(56, 56, 56, 0.189);
 }
 
 .natural__item img {
@@ -511,6 +541,10 @@ header .container nav button {
 }
 
 .natural__item a:hover {
+    color: #009f4d;
+}
+
+.natural__item:hover .hover-item-a {
     color: #009f4d;
 }
 
