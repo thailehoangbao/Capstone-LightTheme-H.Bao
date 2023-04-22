@@ -81,7 +81,7 @@ document.getElementById('moon').onclick = function () {
     document.querySelector('.gallery').classList.remove('white-theme');
     document.querySelector('.gallery .row .col-6 div h1').classList.add('white-color');
     document.querySelector('.gallery .row .col-6 div h1').classList.remove('dark-color');
-    
+
     /**
      * Footer Dark - White
      */
@@ -94,7 +94,7 @@ document.getElementById('moon').onclick = function () {
     document.querySelector('.footer__content__3 form input').classList.add('white-theme');
     document.querySelector('.footer__content__3 form input').classList.add('dark-color');
     var icon = document.querySelectorAll('.footer__icon a i');
-    for (i=0;i<icon.length;i++) {
+    for (i = 0; i < icon.length; i++) {
         icon[i].classList.add('none-boxshadow');
         icon[i].classList.remove('display-boxshadow');
     };
@@ -196,8 +196,16 @@ document.getElementById('sun').onclick = function () {
     document.querySelector('.footer__content__3 form input').classList.add('grey-theme');
     document.querySelector('.footer__content__3 form input').classList.remove('white-theme');
     var icon = document.querySelectorAll('.footer__icon a i');
-    for (i=0;i<icon.length;i++) {
+    for (i = 0; i < icon.length; i++) {
         icon[i].classList.add('display-boxshadow');
         icon[i].classList.remove('none-boxshadow');
     };
 };
+
+$(window).scroll(function () {
+    var sticky = $('.sticky'),
+        scroll = $(window).scrollTop();
+
+    if (scroll >= 100) sticky.addClass('fixed');
+    else sticky.removeClass('fixed');
+});

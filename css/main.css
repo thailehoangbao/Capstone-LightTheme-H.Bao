@@ -52,7 +52,11 @@ body {
     box-shadow: none!important;
 }
 
-
+.fixed {
+    position: fixed;
+    background-color: var(--black);
+    transition: all 0.95s;
+}
 /* HEADER  */
 header {
     position: fixed;
