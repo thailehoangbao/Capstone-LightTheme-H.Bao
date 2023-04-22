@@ -44,12 +44,12 @@ body {
     color: #c1c1c135!important;
 }
 
-.display-boxshadow {
-    box-shadow: inset;
+.display-boxshadow:hover {
+    box-shadow: inset!important;
 }
 
-.none-boxshadow {
-    box-shadow: none;
+.none-boxshadow:hover {
+    box-shadow: none!important;
 }
 
 

@@ -95,8 +95,8 @@ document.getElementById('moon').onclick = function () {
     document.querySelector('.footer__content__3 form input').classList.add('dark-color');
     var icon = document.querySelectorAll('.footer__icon a i');
     for (i=0;i<icon.length;i++) {
-        icon[i].classList.add('display-boxshadow');
-        icon[i].classList.remove('none-boxshadow');
+        icon[i].classList.add('none-boxshadow');
+        icon[i].classList.remove('display-boxshadow');
     };
 };
 /**
@@ -197,7 +197,7 @@ document.getElementById('sun').onclick = function () {
     document.querySelector('.footer__content__3 form input').classList.remove('white-theme');
     var icon = document.querySelectorAll('.footer__icon a i');
     for (i=0;i<icon.length;i++) {
-        icon[i].classList.add('none-boxshadow');
-        icon[i].classList.remove('display-boxshadow');
+        icon[i].classList.add('display-boxshadow');
+        icon[i].classList.remove('none-boxshadow');
     };
 };
